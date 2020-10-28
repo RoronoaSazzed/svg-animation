@@ -1,7 +1,6 @@
 .svgCustom {
     display: grid;
     place-items: center;
-    padding: 150px 0px;
 }
 
 #owner-hand {
@@ -42,7 +41,7 @@
     }
 
     to {
-        transform: rotate(-10deg);
+        transform: rotate(-12deg);
     }
 }
 
@@ -98,28 +97,6 @@
     }
 }
 
-/* #owner-forearm{
-    animation-name: ownerforearm;
-    animation-timing-function: linear;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transform-origin: top center;
-    transform-box: fill-box;
-}
-
-@keyframes ownerforearm {
-    from {
-        transform: rotateX(0deg);
-    }
-
-    to {
-        transform: rotate(-2deg);
-    }
-} */
-
-
 #customer-credit-card {
     animation-name: creditcard;
     animation-timing-function: linear;
@@ -141,8 +118,148 @@
     }
 }
 
-.money-five,
-.money-one,
-.coin-falling {
-    position: absolute;
+
+#money-falling-1 {
+    animation-name: moneyOneFalling;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+#money-falling-2 {
+    animation-name: moneyOneFalling;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-delay: 1s;
+}
+
+#money-falling-3 {
+    animation-name: moneyOneFalling;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-delay: 2s;
+}
+
+#money-falling-4 {
+    animation-name: moneyOneFalling;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-delay: 3s;
+}
+
+#money-falling-5 {
+    animation-name: moneyOneFalling;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-delay: 4s;
+}
+
+#money-falling-6 {
+    animation-name: moneyOneFalling;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-delay: 5s;
+}
+
+#money-falling-6 {
+    animation-name: moneyOneFalling;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-delay: 6s;
+}
+
+#coin-falling-1 {
+    animation-name: moneyOneFalling;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-delay: 1s;
+}
+
+
+#coin-falling-2 {
+    animation-name: moneyOneFalling;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-delay: 2s;
+}
+
+#coin-falling-3 {
+    animation-name: moneyOneFalling;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-delay: 3s;
+}
+
+#coin-falling-4 {
+    animation-name: moneyOneFalling;
+    animation-timing-function: linear;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    transform-origin: center;
+    transform-box: fill-box;
+    animation-delay: 4s;
+}
+
+
+
+
+@keyframes moneyOneFalling {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(650px) rotate(90deg);
+    }
 }
