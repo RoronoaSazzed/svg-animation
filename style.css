@@ -3,15 +3,46 @@
     place-items: center;
 }
 
-#owner-hand {
-    animation-name: ownerhand;
+#owner-hand,
+#customer-hand,
+#owner-mouth,
+#customer-mouth,
+#owner-eyebrows,
+#customer-eyebrows,
+#customer-credit-card,
+#money-falling-1,
+#money-falling-2,
+#money-falling-3,
+#money-falling-4,
+#money-falling-5,
+#money-falling-6,
+#money-falling-7,
+#coin-falling-1,
+#coin-falling-2,
+#coin-falling-3,
+#coin-falling-4 {
     animation-timing-function: linear;
-    animation-duration: 1s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transform-origin: bottom right;
     transform-box: fill-box;
+}
+
+#owner-hand,
+#customer-hand,
+#owner-eyebrows,
+#customer-eyebrows,
+#customer-credit-card{
+    animation-duration: 1s;
+    animation-direction: alternate;
+}
+
+
+
+
+
+#owner-hand {
+    animation-name: ownerhand;
+    transform-origin: bottom right;
 }
 
 @keyframes ownerhand {
@@ -26,13 +57,7 @@
 
 #customer-hand {
     animation-name: customerhand;
-    animation-timing-function: linear;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
     transform-origin: bottom left;
-    transform-box: fill-box;
 }
 
 @keyframes customerhand {
@@ -48,13 +73,8 @@
 #owner-mouth,
 #customer-mouth {
     animation-name: ownermouth;
-    animation-timing-function: linear;
     animation-duration: 2s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
     transform-origin: center;
-    transform-box: fill-box;
 }
 
 #customer-mouth {
@@ -78,13 +98,7 @@
 #owner-eyebrows,
 #customer-eyebrows {
     animation-name: ownereyebrows;
-    animation-timing-function: linear;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
     transform-origin: top center;
-    transform-box: fill-box;
 }
 
 @keyframes ownereyebrows {
@@ -99,13 +113,7 @@
 
 #customer-credit-card {
     animation-name: creditcard;
-    animation-timing-function: linear;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
     transform-origin: center;
-    transform-box: fill-box;
 }
 
 @keyframes creditcard {
@@ -118,136 +126,64 @@
     }
 }
 
-
-#money-falling-1 {
+#money-falling-1,
+#money-falling-2,
+#money-falling-3,
+#money-falling-4,
+#money-falling-5,
+#money-falling-6,
+#money-falling-7,
+#coin-falling-1,
+#coin-falling-2,
+#coin-falling-3,
+#coin-falling-4 {
     animation-name: moneyOneFalling;
-    animation-timing-function: linear;
+    animation-direction: normal;
     animation-duration: 4s;
     animation-fill-mode: both;
     animation-iteration-count: infinite;
-    animation-direction: normal;
     transform-origin: center;
     transform-box: fill-box;
 }
 
 #money-falling-2 {
-    animation-name: moneyOneFalling;
-    animation-timing-function: linear;
-    animation-duration: 4s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    transform-origin: center;
-    transform-box: fill-box;
     animation-delay: 1s;
 }
 
 #money-falling-3 {
-    animation-name: moneyOneFalling;
-    animation-timing-function: linear;
-    animation-duration: 4s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    transform-origin: center;
-    transform-box: fill-box;
     animation-delay: 2s;
 }
 
 #money-falling-4 {
-    animation-name: moneyOneFalling;
-    animation-timing-function: linear;
-    animation-duration: 4s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    transform-origin: center;
-    transform-box: fill-box;
     animation-delay: 3s;
 }
 
 #money-falling-5 {
-    animation-name: moneyOneFalling;
-    animation-timing-function: linear;
-    animation-duration: 4s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    transform-origin: center;
-    transform-box: fill-box;
     animation-delay: 4s;
 }
 
 #money-falling-6 {
-    animation-name: moneyOneFalling;
-    animation-timing-function: linear;
-    animation-duration: 4s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    transform-origin: center;
-    transform-box: fill-box;
     animation-delay: 5s;
 }
 
-#money-falling-6 {
-    animation-name: moneyOneFalling;
-    animation-timing-function: linear;
-    animation-duration: 4s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    transform-origin: center;
-    transform-box: fill-box;
+#money-falling-7 {
     animation-delay: 6s;
 }
 
 #coin-falling-1 {
-    animation-name: moneyOneFalling;
-    animation-timing-function: linear;
-    animation-duration: 4s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    transform-origin: center;
-    transform-box: fill-box;
     animation-delay: 1s;
 }
 
 
 #coin-falling-2 {
-    animation-name: moneyOneFalling;
-    animation-timing-function: linear;
-    animation-duration: 4s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    transform-origin: center;
-    transform-box: fill-box;
     animation-delay: 2s;
 }
 
 #coin-falling-3 {
-    animation-name: moneyOneFalling;
-    animation-timing-function: linear;
-    animation-duration: 4s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    transform-origin: center;
-    transform-box: fill-box;
     animation-delay: 3s;
 }
 
 #coin-falling-4 {
-    animation-name: moneyOneFalling;
-    animation-timing-function: linear;
-    animation-duration: 4s;
-    animation-fill-mode: both;
-    animation-iteration-count: infinite;
-    animation-direction: normal;
-    transform-origin: center;
-    transform-box: fill-box;
     animation-delay: 4s;
 }
 
